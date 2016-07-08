@@ -17,3 +17,13 @@ spring:
 
 
 ###Config Serverには該当するconfigがあったら、最優先。
+###@RefreshScopeとActuator
+```
+POST to /env to update the Environment and rebind @ConfigurationProperties and log levels
+
+/refresh for re-loading the boot strap context and refreshing the @RefreshScope beans
+
+/restart for closing the ApplicationContext and restarting it (disabled by default)
+
+/pause and /resume for calling the Lifecycle methods (stop() and start() on the ApplicationContext)
+```
