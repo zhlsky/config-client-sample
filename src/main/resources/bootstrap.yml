@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9006
+  application:
+    name: demo
+  profiles:
+    active: dev1
+
+server:
+  port: 9007
+  
